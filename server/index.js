@@ -28,6 +28,10 @@ function extractFileId(url) {
   return match ? match[1] : null;
 }
 
+app.get("/api", (req, res) => {
+  res.send("Welcome to the the API!");
+});
+
 app.post("/api/list", async (req, res) => {
   try {
     const { url } = req.body;
