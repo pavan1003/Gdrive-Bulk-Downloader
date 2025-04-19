@@ -20,8 +20,8 @@ export default function FileList({ fileIds, onDownload }) {
                 href={`https://drive.google.com/file/d/${id}/edit`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary underline text-xs "
-              >
+                className="text-primary underline text-xs truncate w-20 md:w-full"
+                >
                 https://drive.google.com/file/d/{id}/edit
               </a>
             </div>
